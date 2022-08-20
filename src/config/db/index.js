@@ -3,7 +3,7 @@ require('dotenv').config()
 
 let username = process.env.MONGO_USER
 let password = process.env.MONGO_PASSWORD
-let http = `mongodb+srv://${username}:${password}@tc-covid.evjlnjx.mongodb.net/tc-covid?retryWrites=true&w=majority`
+let http = `mongodb://localhost:27017/SocialMedia`
 
 async function connect() {
     try {
